@@ -1,0 +1,53 @@
+<!DOCTYPE html lang="en">
+<html ng-app="app" ng-controller="appController">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <base href="/">
+        <title>Angular SPA Template</title>
+        <link rel="icon" type="image/x-icon" href="${require('./assets/images/favicon.ico')}">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    </head>
+    <body layout="row" layout-fill>
+        <div layout="column" layout-fill>
+            <md-toolbar class="header-toolbar" 
+                layout="row" layout-align="center center" md-whiteframe="3">
+                <div class="md-toolbar-tools">
+                    <h3 flex>
+                        <a href="/">Title</a>
+                    </h3>
+                    <md-button class="md-icon-button"
+                        href="/"
+                        target="_blank"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </md-button>
+                    <md-button class="md-icon-button"
+                        href="/"
+                        target="_blank"
+                        aria-label="Twitter">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </md-button>
+                    <md-button class="md-icon-button" 
+                        href="/"
+                        target="_blank"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </md-button>
+                    <md-button class="md-icon-button" 
+                        href="/"
+                        target="_blank"
+                        aria-label="Linked In">
+                        <i class="fab fa-linkedin-in fa-lg"></i>
+                    </md-button>
+                </div>
+            </md-toolbar>
+            <md-content layout="column" flex>
+                <div>
+                    <ui-view autoscroll="true" layout="column"/>
+                </div>
+            </md-content>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+/*
+* This file contains css that is relevant to the entire application
+* no page-specific css should be contained within this file.
+*/
+
+@import "../assets/css/variables";
+@import "../assets/css/common";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
